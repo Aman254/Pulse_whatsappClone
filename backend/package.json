@@ -29,6 +29,7 @@
     "request": "^2.88.2",
     "trim": "^1.0.1",
     "trim-request": "^1.0.6",
+    "validator": "^13.11.0",
     "winston": "^3.13.0"
   }
 }
