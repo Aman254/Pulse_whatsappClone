@@ -52,6 +52,8 @@ export const createUser = async (userData) => {
     );
   }
 
+  //hash password ...User Model
+
   const user = await new UserModel({
     name,
     email,
