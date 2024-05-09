@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home.js";
 import Login from "./pages/login.js";
 import Register from "./pages/register.js";
+import Error from "./components/Error.jsx";
 const App = () => {
   const { user } = useSelector((state) => state.user);
-  console.log(user);
+
   return (
     <div className="dark">
       <Router>
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/error" element={<Error />} />
         </Routes>
       </Router>
     </div>

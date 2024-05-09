@@ -1,16 +1,20 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signUpSchema } from "../../utils/validation";
-import AuthInput from "../AuthInput";
+import AuthInput from "../auth/AuthInput.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import PulseLoader from "react-spinners/PulseLoader";
 import { Link, useNavigate } from "react-router-dom";
 import { registerUser } from "../../features/userSlice.js";
+import { useState } from "react";
+import Picture from "./Picture.jsx";
 
 const RegisterForm = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { status, error } = useSelector((state) => state.user);
+  const [picture, setPicture] = useState();
+  const [readablePicture, setReadablePicture] = useState("");
   const {
     register,
     handleSubmit,
@@ -25,12 +29,13 @@ const RegisterForm = () => {
       navigate("/");
     }
   };
+  // console.log(picture, readablePicture);
   // console.log("values", watch());
   // console.log("errors", errors);
   return (
     <div className="h-screen w-full flex items-center justify-center overflow-hidden">
       {/**Container */}
-      <div className="max-w-md space-y-8 p-10 dark:bg-dark_bg_2 rounded-xl">
+      <div className="w-full max-w-md space-y-8 p-10 dark:bg-dark_bg_2 rounded-xl">
         {/**Heading */}
         <div className="text-center dark:text-dark_text_1">
           <h2 className="mt-6 text-3xl font-bold">Welcome back,</h2>
@@ -55,7 +60,7 @@ const RegisterForm = () => {
           <AuthInput
             name="status"
             type="text"
-            placeholder="Status"
+            placeholder="Status (Optional)"
             register={register}
             error={errors?.status?.message}
           />
@@ -66,12 +71,21 @@ const RegisterForm = () => {
             register={register}
             error={errors?.password?.message}
           />
+
+          {/* Picture  */}
+          <Picture
+            readablePicture={readablePicture}
+            setReadablePicture={setReadablePicture}
+            setPicture={setPicture}
+          />
+
           {/* if we have Error  */}
           {error ? (
             <div>
               <p className="text-red-400">{error}</p>
             </div>
           ) : null}
+
           {/**Submit Button */}
           <button
             className="w-full flex justify-center bg-green_1 text-gray-100 p-4 rounded-full 
@@ -86,6 +100,7 @@ const RegisterForm = () => {
             )}
           </button>
           {/**Sign in link */}
+
           <p
             className="flex gap-2 items-center justify-center mt-10 text-center text-md
           dark:text-dark_text_1"

@@ -5,7 +5,7 @@ import LoginForm from "../components/auth/LoginForm";
 const register = () => {
   return (
     <div
-      className="h-screen dark:bg-dark_bg_1 flex items-center justify-center py-[19px] 
+      className="min-h-screen dark:bg-dark_bg_1 flex items-center justify-center py-[19px] 
     overflow-hidden
     "
     >
