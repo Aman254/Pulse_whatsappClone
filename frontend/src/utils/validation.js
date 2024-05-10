@@ -14,3 +14,11 @@ export const signUpSchema = Yup.object({
     .required("Password is required.")
     .matches(/^.{6,}$/, "Password must contain at least 6 characters"),
 });
+
+export const signInSchema = Yup.object({
+  email: Yup.string()
+    .email("Invalid email address.")
+    .required("Email Address is required."),
+
+  password: Yup.string().required("Password is required."),
+});
