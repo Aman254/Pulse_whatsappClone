@@ -71,7 +71,7 @@ export const login = async (req, res, next) => {
       path: "/api/v1/auth/refreshtoken",
       maxAge: 30 * 24 * 60 * 1000, //30days
     });
-    console.table({ acess_token, refresh_token });
+    // console.table({ acess_token, refresh_token });
 
     res.status(200).json({
       status: "Sucess",
