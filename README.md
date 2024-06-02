@@ -20,7 +20,7 @@ Make sure you have the following installed on your machine:
 2. **Navigate to the Backend Directory**
 
     ```bash
-    cd chat-app-backend/backend
+    cd /backend
     ```
 
 3. **Install Dependencies**
@@ -29,7 +29,7 @@ Make sure you have the following installed on your machine:
     npm install
     ```
 
-4. **Create a .env File**
+4. **Create a .env File Make sure to create in Root of the backend.**
 
     In the `backend` directory, create a `.env` file and add the following environment variables:
 
