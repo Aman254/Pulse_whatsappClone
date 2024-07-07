@@ -1,18 +1,17 @@
 import createHttpError from "http-errors";
-import validator from "validator";
 import { UserModel } from "../models/index.js";
+import validator from "validator";
 import bcrypt from "bcryptjs";
-import { verify } from "../utils/token.utils.js";
 
 export const createUser = async (userData) => {
-  const { name, email, picture, status, password } = userData;
+  const { name, email, password, picture, status } = userData;
 
-  //Check if fields are empty
-  if (!name || !email || !password) {
-    throw createHttpError.BadRequest("Please fill all Fields");
+  //check all fields
+  if (!email || !password || !name) {
+    throw createHttpError.BadRequest("Please fill all fields ");
   }
 
-  //check name length
+  //check Name Length
   if (
     !validator.isLength(name, {
       min: 3,
@@ -20,67 +19,51 @@ export const createUser = async (userData) => {
     })
   ) {
     throw createHttpError.BadRequest(
-      "Please make sure your name is between 3 and 16 Characters"
+      "Please make sure you name is between 3 to 16 characters"
     );
   }
 
-  //Check status length
+  //Check status Length
   if (status && status.length > 64) {
     throw createHttpError.BadRequest(
-      "Please make sure your status is less than 64 Caharacters"
+      "Status characters should not exceed 64 characters"
     );
   }
 
-  //check if email address is valid
+  //Validate Email
   if (!validator.isEmail(email)) {
-    throw createHttpError.BadRequest("Please provide a valid Email Address");
+    throw new createHttpError.BadRequest("Please provide a Valid Email");
   }
 
-  //Check if user already exists
+  //Check DB
   const checkDb = await UserModel.findOne({ email });
   if (checkDb) {
-    throw createHttpError.Conflict("The Email Address Already Exists");
+    throw new createHttpError.Conflict("Email Address already Exists");
   }
 
-  //check password length
-  if (
-    !validator.isLength(password, {
-      min: 3,
-      max: 128,
-    })
-  ) {
-    throw createHttpError.BadRequest(
-      "Please make sure yyour password is between 6 and 128"
-    );
-  }
-
-  //hash password ...User Model
+  //Hash the password in the userModel
 
   const user = await new UserModel({
     name,
     email,
     picture: picture || "https://avatar.iran.liara.run/public",
-    status: status || "Hey there, am using Pulse",
+    status: status || "Hey there Am using Whatsapp",
     password,
   }).save();
+
   return user;
 };
 
 export const signUser = async (email, password) => {
   const user = await UserModel.findOne({ email: email.toLowerCase() }).lean();
 
-  // Check if user Exist
-  if (!user) throw createHttpError.NotFound("Invalid Credentials.");
+  //Check if User Exists
+  if (!user) throw createHttpError.NotFound("Invalid Credentials");
 
-  //comapre passwords
-
+  //Compare Passwords
   let passwordMatches = await bcrypt.compare(password, user.password);
   if (!passwordMatches) throw createHttpError.NotFound("Invalid Credentials");
 
+  //Everything is fine then return
   return user;
-};
-
-export const verifyToken = async (token, secret) => {
-  let check = await verify(token, secret);
-  return check;
 };

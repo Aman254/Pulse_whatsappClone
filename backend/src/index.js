@@ -1,36 +1,27 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 import app from "./app.js";
 import logger from "./configs/logger.config.js";
 
-//env variables
+//Environmet Variables
 const { DATABASE_URL } = process.env;
 const PORT = process.env.PORT || 8000;
 
-//exit on mongodb error
+//Handling MongoDB connection Errors
 mongoose.connection.on("error", (err) => {
-  logger.error(`Mongodb connection Error: ${err}`);
+  logger.error(`Error in Connecting MongoDB:`, err);
   process.exit(1);
 });
 
-// mongodb debug mode
-if (process.env.NODE_ENV !== "production") {
-  mongoose.set("debug", true);
-}
-// mongodb Connection
-mongoose
-  .connect(DATABASE_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    logger.info("Connected to Mogodb");
-  });
+//Connection to MongoDB
+mongoose.connect(DATABASE_URL, {}).then(() => {
+  logger.info("Connected to Mongodb");
+});
+
+//App Listening on PORT
 let server;
 server = app.listen(PORT, () => {
-  logger.info(`Server is listening at ${PORT}.`);
-  // console.log("process id", process.pid);
+  logger.info(`App running on: ${PORT}`);
 });
-//handle server errors
 
 const exitHandler = () => {
   if (server) {
@@ -40,12 +31,13 @@ const exitHandler = () => {
     process.exit(1);
   }
 };
-const unexpextedErrorHandler = (error) => {
+
+const uncaughtErrorHandler = (error) => {
   logger.error(error);
-  exitHandler();
+  exitHandler;
 };
 
-process.on("UncaughtException", unexpextedErrorHandler);
+process.on("uncaughtException", uncaughtErrorHandler);
 
 //SIGTERM
 process.on("SIGTERM", () => {
