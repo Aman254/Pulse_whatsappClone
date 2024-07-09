@@ -30,3 +30,15 @@ export const populateMessage = async (id) => {
   if (!msg) throw createHttpError.BadRequest("OOps.... Something went Wrong");
   return msg;
 };
+
+export const getConvoMessages = async (convo_id) => {
+  const messages = await MessageModel.find({ conversation: convo_id })
+    .populate("sender", "name picture email status")
+    .populate("conversation");
+
+  if (!messages) {
+    throw createHttpError.BadRequest("OOps.... Something went Wrong");
+  }
+
+  return messages;
+};
