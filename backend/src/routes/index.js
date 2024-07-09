@@ -5,6 +5,6 @@ import conversationRoutes from "./conversation.route.js";
 const router = express.Router();
 
 router.use("/auth", authRoutes);
-router.use("/", conversationRoutes);
+router.use("/conversation", conversationRoutes);
 
 export default router;

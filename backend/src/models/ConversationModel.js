@@ -8,7 +8,7 @@ const conversationSchema = mongoose.Schema(
       required: [true, "Conversation Name is required"],
       trim: true,
     },
-    idGroup: {
+    isGroup: {
       type: Boolean,
       required: true,
       default: false,
