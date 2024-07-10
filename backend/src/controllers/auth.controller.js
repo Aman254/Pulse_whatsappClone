@@ -43,7 +43,7 @@ export const register = async (req, res, next) => {
         password: newUser.password,
         picture: newUser.picture,
         status: newUser.status,
-        access_token: access_token,
+        token: access_token,
       },
     });
   } catch (error) {
@@ -84,7 +84,7 @@ export const login = async (req, res, next) => {
         password: user.password,
         picture: user.picture,
         status: user.status,
-        access_token: access_token,
+        token: access_token,
       },
     });
   } catch (error) {
@@ -129,7 +129,7 @@ export const refreshToken = async (req, res, next) => {
         password: user.password,
         picture: user.picture,
         status: user.status,
-        access_token: access_token,
+        token: access_token,
       },
     });
   } catch (error) {
