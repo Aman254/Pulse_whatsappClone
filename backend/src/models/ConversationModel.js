@@ -5,12 +5,12 @@ const conversationSchema = mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, "Conversation Name is required"],
+      required: [true, "Conversation Name is Required"],
       trim: true,
     },
     isGroup: {
       type: Boolean,
-      required: true,
+      required: [true],
       default: false,
     },
     users: [
@@ -19,20 +19,16 @@ const conversationSchema = mongoose.Schema(
         ref: "UserModel",
       },
     ],
-
     latestMessage: {
       type: ObjectId,
       ref: "MessageModel",
     },
     admin: {
       type: ObjectId,
-      ref: "UserModel",
+      ref: "userModel",
     },
   },
-  {
-    collection: "conversations",
-    timestamps: true,
-  }
+  { collection: "conversations", timestamps: true }
 );
 
 const ConversationModel =
