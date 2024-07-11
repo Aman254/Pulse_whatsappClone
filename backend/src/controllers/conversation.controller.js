@@ -3,6 +3,7 @@ import logger from "../configs/logger.config.js";
 import {
   createConversation,
   doesConversationExist,
+  getUserConversation,
   populateConversation,
 } from "../services/conversation.service.js";
 import { findUser } from "../services/user.service.js";
@@ -51,6 +52,19 @@ export const create_open_conversation = async (req, res, next) => {
       //Now that we have the created the Conversation, we send as a response.
       res.status(200).json(populatedConvo);
     }
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const getConversations = async (req, res, next) => {
+  try {
+    //Firstly, getting the userId Id that is Logged in right now
+    const user_id = req.user.userId;
+    //Creating a service getUserConversation and Waiting for it to resolve
+    const conversations = await getUserConversation(user_id);
+    //after the getUserConversation is resolved send it in json form and with statusCode 200
+    res.status(200).json(conversations);
   } catch (error) {
     next(error);
   }

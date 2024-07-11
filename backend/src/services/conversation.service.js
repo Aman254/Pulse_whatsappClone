@@ -59,3 +59,27 @@ export const populateConversation = async (
 
   return populateConvo;
 };
+
+export const getUserConversation = async (user_id) => {
+  let conversations;
+
+  await ConversationModel.find({
+    users: { $elemMatch: { $eq: user_id } },
+  })
+    .populate("users", "-passwords")
+    .populate("admin", "-password")
+    .populate("latestMessage")
+    .sort({ updatedAt: -1 })
+    .then(async (results) => {
+      results = await UserModel.populate(results, {
+        path: "latestMessage.sender",
+        select: "name email picture status",
+      });
+      conversations = results;
+    })
+    .catch((err) => {
+      console.log(err);
+      throw createHttpError.BadRequest("Somethinng went wrong");
+    });
+  return conversations;
+};
