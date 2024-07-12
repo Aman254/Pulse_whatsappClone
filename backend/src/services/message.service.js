@@ -1,10 +1,10 @@
 import createHttpError from "http-errors";
 import { MessageModel } from "../models/index.js";
 
-export const createMessage = async (data) => {
-  let newMessage = await MessageModel.create(data);
-  if (!newMessage)
-    throw createHttpError.BadRequest("OOps.. Something went wrong");
+export const createMessage = async (msgData) => {
+  let newMessage = await MessageModel.create(msgData);
+
+  if (!newMessage) throw createHttpError.BadRequest("Something went wrong");
 
   return newMessage;
 };
@@ -13,12 +13,12 @@ export const populateMessage = async (id) => {
   let msg = await MessageModel.findById(id)
     .populate({
       path: "sender",
-      select: "name picture",
+      select: "name picture email status",
       model: "UserModel",
     })
     .populate({
       path: "conversation",
-      select: "name isGroup users",
+      select: "name isgroup users",
       model: "ConversationModel",
       populate: {
         path: "users",
@@ -26,19 +26,7 @@ export const populateMessage = async (id) => {
         model: "UserModel",
       },
     });
+  if (!msg) throw createHttpError.BadRequest("Something Went Wrong");
 
-  if (!msg) throw createHttpError.BadRequest("OOps.... Something went Wrong");
   return msg;
-};
-
-export const getConvoMessages = async (convo_id) => {
-  const messages = await MessageModel.find({ conversation: convo_id })
-    .populate("sender", "name picture email status")
-    .populate("conversation");
-
-  if (!messages) {
-    throw createHttpError.BadRequest("OOps.... Something went Wrong");
-  }
-
-  return messages;
 };
