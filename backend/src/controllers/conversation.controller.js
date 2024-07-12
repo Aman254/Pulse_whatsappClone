@@ -36,6 +36,7 @@ export const create_open_conversation = async (req, res, next) => {
       //After we found the user then extracting the details form it.
       let convoData = {
         name: receiver_user.name,
+        picture: receiver_user.picture,
         isGroup: false,
         users: [sender_id, receiver_id],
       };
