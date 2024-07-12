@@ -13,6 +13,8 @@ export const searchUsers = async (keyword) => {
       { name: { $regex: keyword, $options: "i" } },
       { email: { $regex: keyword, $options: "i" } },
     ],
+  }).find({
+    _id: { $ne: userId },
   });
   return users;
 };
