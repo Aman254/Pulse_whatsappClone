@@ -1,0 +1,378 @@
+[
+  {
+    "title": "Introduction to Machine Learning",
+    "content": "Machine learning is a field of artificial intelligence that uses statistical techniques to give computer systems the ability to 'learn' from data, without being explicitly programmed.",
+    "url": "https://www.expert.ai/blog/machine-learning-definition/"
+  },
+  {
+    "title": "Guide to Web Development",
+    "content": "Web development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications.",
+    "url": "https://en.wikipedia.org/wiki/Web_development"
+  },
+  {
+    "title": "Advanced JavaScript Techniques",
+    "content": "Advanced JavaScript techniques include closures, async/await, and module patterns. These techniques help to write more efficient and cleaner code.",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+  },
+  {
+    "title": "Understanding Databases",
+    "content": "A database is an organized collection of data, generally stored and accessed electronically from a computer system. Databases are more complex than the simple filing systems.",
+    "url": "https://en.wikipedia.org/wiki/Database"
+  },
+  {
+    "title": "Getting Started with Python",
+    "content": "Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation.",
+    "url": "https://www.python.org/about/gettingstarted/"
+  },
+  {
+    "title": "Health Benefits of Yoga",
+    "content": "Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India. Yoga is one of the six Āstika schools of Indian philosophical traditions.",
+    "url": "https://www.healthline.com/nutrition/13-benefits-of-yoga"
+  },
+  {
+    "title": "React - A JavaScript Library for Building User Interfaces",
+    "content": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
+    "url": "https://reactjs.org/"
+  },
+  {
+    "title": "Introduction to Docker",
+    "content": "Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.",
+    "url": "https://docs.docker.com/get-started/"
+  },
+  {
+    "title": "Node.js - JavaScript Runtime",
+    "content": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.",
+    "url": "https://nodejs.org/en/about/"
+  },
+  {
+    "title": "CSS Tricks for Responsive Design",
+    "content": "Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD.",
+    "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+  },
+  {
+    "title": "Understanding Artificial Intelligence",
+    "content": "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and act like humans. This includes learning and problem-solving.",
+    "url": "https://www.ibm.com/cloud/learn/what-is-artificial-intelligence"
+  },
+  {
+    "title": "Introduction to Cloud Computing",
+    "content": "Cloud computing is the delivery of different services through the Internet, including data storage, servers, databases, networking, and software.",
+    "url": "https://azure.microsoft.com/en-us/overview/what-is-cloud-computing/"
+  },
+  {
+    "title": "Basics of Blockchain Technology",
+    "content": "A blockchain is a decentralized, distributed, and often public, digital ledger consisting of records called blocks that are used to record transactions across many computers.",
+    "url": "https://www.investopedia.com/terms/b/blockchain.asp"
+  },
+  {
+    "title": "Introduction to DevOps",
+    "content": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.",
+    "url": "https://aws.amazon.com/devops/what-is-devops/"
+  },
+  {
+    "title": "A Beginner's Guide to Kubernetes",
+    "content": "Kubernetes is an open-source system for automating the deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery.",
+    "url": "https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/"
+  },
+  {
+    "title": "Understanding Cybersecurity",
+    "content": "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information.",
+    "url": "https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html"
+  },
+  {
+    "title": "The Future of Quantum Computing",
+    "content": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Quantum computers are believed to be able to solve certain problems much faster than classical computers.",
+    "url": "https://www.ibm.com/quantum-computing/what-is-quantum-computing/"
+  },
+  {
+    "title": "Getting Started with GraphQL",
+    "content": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. It provides a complete and understandable description of the data in your API.",
+    "url": "https://graphql.org/learn/"
+  },
+  {
+    "title": "Benefits of Mindfulness Meditation",
+    "content": "Mindfulness meditation is a mental training practice that involves focusing your mind on your experiences (such as your own emotions, thoughts, and sensations) in the present moment. It has many benefits including stress reduction.",
+    "url": "https://www.mindful.org/meditation/mindfulness-getting-started/"
+  },
+  {
+    "title": "Introduction to Machine Learning",
+    "content": "Machine learning is a field of artificial intelligence that uses statistical techniques to give computer systems the ability to 'learn' from data, without being explicitly programmed.",
+    "url": "https://www.expert.ai/blog/machine-learning-definition/"
+  },
+  {
+    "title": "A Beginner's Guide to React",
+    "content": "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.",
+    "url": "https://reactjs.org/docs/getting-started.html"
+  },
+  {
+    "title": "Understanding Big Data",
+    "content": "Big data refers to data that is so large, fast, or complex that it’s difficult or impossible to process using traditional methods. Big data has the potential to help companies improve operations and make faster, more intelligent decisions.",
+    "url": "https://www.oracle.com/big-data/what-is-big-data.html"
+  },
+  {
+    "title": "The Benefits of Regular Exercise",
+    "content": "Regular physical activity can improve muscle strength and boost your endurance. Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently.",
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389"
+  },
+  {
+    "title": "The Science Behind Climate Change",
+    "content": "Climate change refers to long-term changes in temperature, precipitation, and other atmospheric conditions on Earth. It is primarily caused by human activities, such as burning fossil fuels, which increase levels of greenhouse gases in the atmosphere.",
+    "url": "https://climate.nasa.gov/causes/"
+  },
+  {
+    "title": "A Guide to Financial Planning",
+    "content": "Financial planning involves evaluating your current financial situation, identifying your goals, and developing a plan to achieve those goals. It includes budgeting, saving, investing, and managing debt.",
+    "url": "https://www.investopedia.com/terms/f/financial-plan.asp"
+  },
+  {
+    "title": "Understanding Artificial Intelligence",
+    "content": "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and act like humans. This includes learning and problem-solving.",
+    "url": "https://www.ibm.com/cloud/learn/what-is-artificial-intelligence"
+  },
+  {
+    "title": "Introduction to Cloud Computing",
+    "content": "Cloud computing is the delivery of different services through the Internet, including data storage, servers, databases, networking, and software.",
+    "url": "https://azure.microsoft.com/en-us/overview/what-is-cloud-computing/"
+  },
+  {
+    "title": "Basics of Blockchain Technology",
+    "content": "A blockchain is a decentralized, distributed, and often public, digital ledger consisting of records called blocks that are used to record transactions across many computers.",
+    "url": "https://www.investopedia.com/terms/b/blockchain.asp"
+  },
+  {
+    "title": "Introduction to DevOps",
+    "content": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.",
+    "url": "https://aws.amazon.com/devops/what-is-devops/"
+  },
+  {
+    "title": "A Beginner's Guide to Kubernetes",
+    "content": "Kubernetes is an open-source system for automating the deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery.",
+    "url": "https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/"
+  },
+  {
+    "title": "Understanding Cybersecurity",
+    "content": "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information.",
+    "url": "https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html"
+  },
+  {
+    "title": "The Future of Quantum Computing",
+    "content": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Quantum computers are believed to be able to solve certain problems much faster than classical computers.",
+    "url": "https://www.ibm.com/quantum-computing/what-is-quantum-computing/"
+  },
+  {
+    "title": "Getting Started with GraphQL",
+    "content": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. It provides a complete and understandable description of the data in your API.",
+    "url": "https://graphql.org/learn/"
+  },
+  {
+    "title": "Benefits of Mindfulness Meditation",
+    "content": "Mindfulness meditation is a mental training practice that involves focusing your mind on your experiences (such as your own emotions, thoughts, and sensations) in the present moment. It has many benefits including stress reduction.",
+    "url": "https://www.mindful.org/meditation/mindfulness-getting-started/"
+  },
+  {
+    "title": "Introduction to Machine Learning",
+    "content": "Machine learning is a field of artificial intelligence that uses statistical techniques to give computer systems the ability to 'learn' from data, without being explicitly programmed.",
+    "url": "https://www.expert.ai/blog/machine-learning-definition/"
+  },
+  {
+    "title": "A Beginner's Guide to React",
+    "content": "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.",
+    "url": "https://reactjs.org/docs/getting-started.html"
+  },
+  {
+    "title": "Understanding Big Data",
+    "content": "Big data refers to data that is so large, fast, or complex that it’s difficult or impossible to process using traditional methods. Big data has the potential to help companies improve operations and make faster, more intelligent decisions.",
+    "url": "https://www.oracle.com/big-data/what-is-big-data.html"
+  },
+  {
+    "title": "The Benefits of Regular Exercise",
+    "content": "Regular physical activity can improve muscle strength and boost your endurance. Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently.",
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389"
+  },
+  {
+    "title": "The Science Behind Climate Change",
+    "content": "Climate change refers to long-term changes in temperature, precipitation, and other atmospheric conditions on Earth. It is primarily caused by human activities, such as burning fossil fuels, which increase levels of greenhouse gases in the atmosphere.",
+    "url": "https://climate.nasa.gov/causes/"
+  },
+  {
+    "title": "A Guide to Financial Planning",
+    "content": "Financial planning involves evaluating your current financial situation, identifying your goals, and developing a plan to achieve those goals. It includes budgeting, saving, investing, and managing debt.",
+    "url": "https://www.investopedia.com/terms/f/financial-plan.asp"
+  },
+
+  {
+    "title": "The History of Ancient Egypt",
+    "content": "Ancient Egypt was a civilization of ancient North Africa, concentrated along the lower reaches of the Nile River, situated in the place that is now the country Egypt.",
+    "url": "https://www.history.com/topics/ancient-history/ancient-egypt"
+  },
+  {
+    "title": "Understanding Human Psychology",
+    "content": "Psychology is the scientific study of mind and behavior. Psychology includes the study of conscious and unconscious phenomena, as well as feelings and thoughts.",
+    "url": "https://www.verywellmind.com/psychology-4014660"
+  },
+  {
+    "title": "Introduction to Classical Music",
+    "content": "Classical music is art music produced or rooted in the traditions of Western culture, including both liturgical (religious) and secular music.",
+    "url": "https://www.classicfm.com/discover-music/periods-genres/classical/"
+  },
+  {
+    "title": "Basics of Organic Chemistry",
+    "content": "Organic chemistry is the scientific study of the structure, properties, and reactions of organic compounds and organic materials, i.e., matter in its various forms that contain carbon atoms.",
+    "url": "https://www.khanacademy.org/science/organic-chemistry"
+  },
+  {
+    "title": "Exploring the Solar System",
+    "content": "The solar system consists of the Sun and the objects that orbit it, including eight planets and their moons, as well as comets, asteroids, and dwarf planets.",
+    "url": "https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/"
+  },
+  {
+    "title": "Introduction to World Literature",
+    "content": "World literature is a way of collecting literary works that has traveled the world beyond its country of origin either through translation or by being read by a wide audience.",
+    "url": "https://www.britannica.com/topic/world-literature"
+  },
+  {
+    "title": "History of the Renaissance",
+    "content": "The Renaissance was a fervent period of European cultural, artistic, political, and economic 'rebirth' following the Middle Ages. It generally described as taking place from the 14th century to the 17th century.",
+    "url": "https://www.history.com/topics/renaissance/renaissance"
+  },
+  {
+    "title": "Introduction to Economics",
+    "content": "Economics is a social science concerned with the production, distribution, and consumption of goods and services. It studies how individuals, businesses, governments, and nations make choices about how to allocate resources.",
+    "url": "https://www.investopedia.com/terms/e/economics.asp"
+  },
+  {
+    "title": "Understanding Human Anatomy",
+    "content": "Human anatomy is the scientific study of the structure of the human body. Anatomical structures are described and organized into various systems that carry out specific functions necessary for life.",
+    "url": "https://www.visiblebody.com/learn/medical/anatomy-and-physiology/human-anatomy"
+  },
+  {
+    "title": "Basics of Environmental Science",
+    "content": "Environmental science is the study of the interactions among the physical, chemical, and biological components of the environment, including their effects on all types of organisms.",
+    "url": "https://www.nationalgeographic.org/encyclopedia/environmental-science/"
+  },
+  {
+    "title": "The Principles of Macroeconomics",
+    "content": "Macroeconomics is the branch of economics that studies how the aggregate economy behaves. In macroeconomics, a variety of economy-wide phenomena are thoroughly examined such as inflation, price levels, rate of economic growth, national income, gross domestic product (GDP), and changes in unemployment.",
+    "url": "https://www.investopedia.com/terms/m/macroeconomics.asp"
+  },
+  {
+    "title": "History of the Industrial Revolution",
+    "content": "The Industrial Revolution, which took place from the 18th to 19th centuries, was a period during which predominantly agrarian, rural societies in Europe and America became industrial and urban.",
+    "url": "https://www.history.com/topics/industrial-revolution/industrial-revolution"
+  },
+  {
+    "title": "Introduction to Sociology",
+    "content": "Sociology is the study of social behavior, society, patterns of social relationships, social interaction, and culture that surrounds everyday life.",
+    "url": "https://www.britannica.com/topic/sociology"
+  },
+  {
+    "title": "Basics of Human Nutrition",
+    "content": "Human nutrition is the study of how food and drink affect our health, focusing on the nutritional content, and the body's ability to utilize nutrients in food.",
+    "url": "https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/"
+  },
+  {
+    "title": "Understanding Political Science",
+    "content": "Political science is the study of politics and government, focusing on the analysis of political activity, political thought, political behavior, and associated constitutions and laws.",
+    "url": "https://www.britannica.com/topic/political-science"
+  },
+  {
+    "title": "Introduction to Art History",
+    "content": "Art history is the study of objects of art in their historical development and stylistic contexts, such as genre, design, format, and style.",
+    "url": "https://www.khanacademy.org/humanities/art-history"
+  },
+  {
+    "title": "Basics of Astronomy",
+    "content": "Astronomy is the scientific study of celestial objects, space, and the universe as a whole. It uses mathematics, physics, and chemistry in order to explain their origin and evolution.",
+    "url": "https://www.space.com/16014-astronomy.html"
+  },
+  {
+    "title": "Exploring the History of Philosophy",
+    "content": "Philosophy is the study of general and fundamental questions about existence, knowledge, values, reason, mind, and language. It is distinguished from other ways of addressing such problems by its critical, generally systematic approach and its reliance on rational argument.",
+    "url": "https://www.britannica.com/topic/philosophy"
+  },
+  {
+    "title": "Understanding Global Warming",
+    "content": "Global warming is the long-term heating of Earth’s climate system observed since the pre-industrial period (between 1850 and 1900) due to human activities, primarily fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere.",
+    "url": "https://climate.nasa.gov/causes/"
+  },
+  {
+    "title": "Basics of Financial Accounting",
+    "content": "Financial accounting is the field of accounting concerned with the summary, analysis and reporting of financial transactions related to a business.",
+    "url": "https://www.investopedia.com/terms/f/financialaccounting.asp"
+  },
+  {
+    "title": "Introduction to Cultural Anthropology",
+    "content": "Cultural anthropology is a branch of anthropology focused on the study of cultural variation among humans. It is in contrast to social anthropology, which perceives cultural variation as a subset of the anthropological constant.",
+    "url": "https://www.britannica.com/science/cultural-anthropology"
+  },
+  {
+    "title": "Exploring the World of Classical Literature",
+    "content": "Classical literature refers to the literature of ancient Greece and Rome. It includes works of poetry, drama, and prose written in ancient Greek and Latin.",
+    "url": "https://www.britannica.com/art/classical-literature"
+  },
+  {
+    "title": "Understanding Evolutionary Biology",
+    "content": "Evolutionary biology is a subfield of biology concerned with the study of the evolutionary processes that produced the diversity of life on Earth. It encompasses the study of changes in species over time and the relationships between them.",
+    "url": "https://www.nature.com/subjects/evolutionary-biology"
+  },
+  {
+    "title": "Basics of Geology",
+    "content": "Geology is an Earth science concerned with the solid Earth, the rocks of which it is composed, and the processes by which they change over time. It can also include the study of solid features of any terrestrial planet or natural satellite.",
+    "url": "https://www.usgs.gov/faqs/what-geology"
+  },
+  {
+    "title": "History of the American Revolution",
+    "content": "The American Revolution was a colonial revolt that took place between 1765 and 1783. The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America.",
+    "url": "https://www.history.com/topics/american-revolution/american-revolution-history"
+  },
+  {
+    "title": "Introduction to Linguistics",
+    "content": "Linguistics is the scientific study of language. It involves analyzing language form, language meaning, and language in context.",
+    "url": "https://www.britannica.com/science/linguistics"
+  },
+  {
+    "title": "The Basics of Marine Biology",
+    "content": "Marine biology is the scientific study of organisms in the ocean or other marine bodies of water. It includes studying the organisms themselves and their interactions with each other and their environment.",
+    "url": "https://www.marinebio.org/what-is-marine-biology/"
+  },
+  {
+    "title": "Introduction to Archaeology",
+    "content": "Archaeology is the study of human activity through the recovery and analysis of material culture. It provides a way to explore the human past through physical remains, such as artifacts, structures, and landscapes.",
+    "url": "https://www.archaeological.org/education/what-is-archaeology/"
+  },
+  {
+    "title": "Basics of Microeconomics",
+    "content": "Microeconomics is a branch of economics that studies the behavior of individuals and firms in making decisions regarding the allocation of limited resources.",
+    "url": "https://www.investopedia.com/terms/m/microeconomics.asp"
+  },
+  {
+    "title": "The History of Jazz Music",
+    "content": "Jazz is a music genre that originated in the African-American communities of New Orleans, United States, in the late 19th and early 20th centuries. It emerged in part from blues and ragtime.",
+    "url": "https://www.jazz.org/JazzHistory/"
+  },
+  {
+    "title": "Introduction to Botany",
+    "content": "Botany is the scientific study of plants, including their physiology, structure, genetics, ecology, distribution, classification, and economic importance.",
+    "url": "https://www.britannica.com/science/botany"
+  },
+  {
+    "title": "Understanding World Geography",
+    "content": "Geography is the study of places and the relationships between people and their environments. Geographers explore both the physical properties of the Earth's surface and the human societies spread across it.",
+    "url": "https://www.nationalgeographic.org/education/what-is-geography/"
+  },
+  {
+    "title": "Basics of Classical Mythology",
+    "content": "Classical mythology refers to the myths and legends of ancient Greece and Rome, which have had an enduring influence on Western culture and literature.",
+    "url": "https://www.britannica.com/topic/classical-mythology"
+  },
+  {
+    "title": "The History of Medieval Europe",
+    "content": "Medieval Europe, or the Middle Ages, is the period of European history from the fall of the Roman Empire in the West (5th century) to the fall of Constantinople (1453), or the beginning of the Renaissance.",
+    "url": "https://www.history.com/topics/middle-ages"
+  },
+  {
+    "title": "Introduction to Zoology",
+    "content": "Zoology is the branch of biology that studies the animal kingdom, including the structure, embryology, evolution, classification, habits, and distribution of all animals, both living and extinct.",
+    "url": "https://www.britannica.com/science/zoology"
+  }
+]
