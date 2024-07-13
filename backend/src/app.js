@@ -41,7 +41,7 @@ app.use(compression());
 //api/v1 Routess
 app.use("/api/v1/", routes);
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "http://localhost:3001" }));
 
 app.use(async (req, res, next) => {
   next(createHttpError.NotFound("This Route does Not Exist"));

@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
+import { Server } from "socket.io";
 import app from "./app.js";
 import logger from "./configs/logger.config.js";
+import { createLogger } from "winston";
 
 //Environmet Variables
 const { DATABASE_URL } = process.env;
@@ -21,6 +23,18 @@ mongoose.connect(DATABASE_URL, {}).then(() => {
 let server;
 server = app.listen(PORT, () => {
   logger.info(`App running on: ${PORT}`);
+});
+
+//Socket io
+const io = new Server(server, {
+  pingTimeout: 60000,
+  cors: {
+    origin: process.env.CLIENT_ENDPOINT,
+  },
+});
+
+io.on("connection", (socket) => {
+  logger.info("socket io  conncted Sucessfully");
 });
 
 const exitHandler = () => {
@@ -48,3 +62,6 @@ process.on("SIGTERM", () => {
     process.exit(1);
   }
 });
+
+const ednp = "http://localhost:5000/api/v1";
+console.log(ednp.split("/api/v1")[0]);
