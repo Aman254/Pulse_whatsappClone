@@ -5,6 +5,7 @@ import ConversationRoutes from "./conversation.route.js";
 import getConversationRoutes from "./conversation.route.js";
 import getMessageRoutes from "./message.route.js";
 import sendMessageRoutes from "./message.route.js";
+import allUsers from "./user.route.js";
 
 const router = express.Router();
 
@@ -13,6 +14,7 @@ router.use("/auth", authRoutes);
 
 //User Routes
 router.use("/user", userRoutes);
+router.use("/allusers", allUsers);
 
 /**Conversation Routes */
 router.use("/conversation", ConversationRoutes);

@@ -18,3 +18,11 @@ export const searchUsers = async (keyword) => {
   });
   return users;
 };
+
+export const getAllUsers = async () => {
+  const allUsers = await UserModel.find();
+
+  if (!allUsers) throw createHttpError.NotFound("No Users Found");
+
+  return allUsers;
+};
