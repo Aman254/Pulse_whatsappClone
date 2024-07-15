@@ -32,11 +32,11 @@ export const create_open_conversation = async (req, res, next) => {
       //If the conversation does not exist we need to create the conversation
     } else {
       //Findind the user with the Receiver id with help of the service finduser
-      let receiver_user = await findUser(receiver_id);
+      // let receiver_user = await findUser(receiver_id);
       //After we found the user then extracting the details form it.
       let convoData = {
-        name: receiver_user.name,
-        picture: receiver_user.picture,
+        name: "conversation name",
+        picture: "conversation picture",
         isGroup: false,
         users: [sender_id, receiver_id],
       };
